@@ -4,11 +4,15 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Nexord — Общайся. Играй. Будь собой.</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=gg+sans:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<!-- === GOOGLE FONTS === -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=gg+sans:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- === FIREBASE SDK (обновлённая версия) === -->
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 :root{
@@ -1025,12 +1029,14 @@ body{font-family:var(--font-main);background:var(--bg-primary);color:var(--text-
 <script>
 // =================== FIREBASE ===================
 const firebaseConfig = {
-  apiKey:"AIzaSyCRQBj8tYWE7jR00SodWWBNEKq_m-Vfoyo",
-  authDomain:"chatkz-7d4a8.firebaseapp.com",
-  databaseURL:"https://chatkz-7d4a8-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId:"chatkz-7d4a8",
-  messagingSenderId:"118207929174",
-  appId:"1:118207929174:web:242c085bac1b43262694f7"
+  apiKey: "AIzaSyCRQBj8tYWE7jR00SodWWBNEKq_m-Vfoyo",
+  authDomain: "chatkz-7d4a8.firebaseapp.com",
+  databaseURL: "https://chatkz-7d4a8-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "chatkz-7d4a8",
+  storageBucket: "chatkz-7d4a8.firebasestorage.app",
+  messagingSenderId: "118207929174",
+  appId: "1:118207929174:web:a120b5237c22501b2694f7",
+  measurementId: "G-VSYNLD7RME"
 };
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
